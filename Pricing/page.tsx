@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { MdDoNotDisturbOn } from "react-icons/md";
 
-1
+
 const Pricing = () => {
   return (
      <div className="relative min-h-screen transition-colors text-white font-sans selection:bg-orange-500/30 overflow-hidden">
