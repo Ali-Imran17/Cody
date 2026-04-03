@@ -6,9 +6,9 @@ import { CiMail } from "react-icons/ci";
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function AboutUs() {
+export default function aboutus() {
   return (
-    <div className="relative min-h-screen transition-colors text-white font-sans selection:bg-orange-500/30 overflow-hidden">
+    <div className="relative min-h-screen transition-colors text-white font-sans selection:bg-orange-500/30 ">
     
       <div className="absolute inset-0 bg-[#4b1f00] 
         bg-[repeating-linear-gradient(90deg,#5a2400_0px,#5a2400_60px,#4b1f00_60px,#4b1f00_120px)]">
@@ -20,7 +20,7 @@ export default function AboutUs() {
       </div>
       <div className="relative z-10">
 
-   <section className="relative  flex flex-col items-center pt-10 px-4 overflow-hidden">
+   <section className="relative  flex flex-col items-center pt-10 px-4 ">
         <div className="absolute inset-0 opacity-10 pointer-events-none" 
              style={{ background: 'repeating-linear-gradient(90deg, transparent, transparent 80px, #4a2b00 80px, #4a2b00 81px)' }}>
         </div>
@@ -34,20 +34,20 @@ export default function AboutUs() {
              <input type="checkbox" id="menu-toggle" className="hidden peer " />
              <div className="flex justify-between items-center">
                <ul className="hidden md:flex gap-6 md:gap-8 text-sm font-bold tracking-wide text-white">
-                 <Link href='/' className='hover:text-amber-600'>Home</Link>
-                 <Link href='/AboutUs' className='hover:text-amber-600'>About</Link>
-                 <Link href='/CodyCommerce' className='hover:text-amber-600'>Cody</Link>
-                 <Link href='/Pricing' className='hover:text-amber-600'>Pricing</Link>
-                 <Link href='/Contact' className='hover:text-amber-600'>Contact</Link>
+                <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+                <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
+                <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
+                <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
+                <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
                </ul>
                <label htmlFor="menu-toggle" className="md:hidden ml-auto text-white text-2xl cursor-pointer">☰</label>
              </div>
              <div className="absolute left-1 top-16 w-52 bg-neutral-900 border border-white/20 rounded-2xl p-6 flex-col gap-4 text-white hidden peer-checked:flex md:hidden">
-               <Link href='/' className='hover:text-amber-600'>Home</Link>
-               <Link href='/AboutUs' className='hover:text-amber-600'>About</Link>
-               <Link href='/CodyCommerce' className='hover:text-amber-600'>Cody</Link>
-               <Link href='/Pricing' className='hover:text-amber-600'>Pricing</Link>
-               <Link href='/Contact' className='hover:text-amber-600'>Contact</Link>
+                <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+                <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
+                <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
+                <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
+                <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
              </div>
            </nav>
 </section>
@@ -79,10 +79,10 @@ export default function AboutUs() {
             </h2>
           </div>
           
-          <p className="text-[#797979] text-lg max-w-3xl leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/> 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br/> 
-            veniam, quis nostrud
+          <p className="text-[#949494] text-lg max-w-3xl leading-relaxed">
+             I specialize in Amazon and Walmart resale, with a focus on working directly with brands
+              to ensure their products are represented the right way. Through hands-on experience across both marketplaces,
+              I’ve built a system centered around clean, optimized listings, consistent pricing, and reliable fulfillment. <br/><br/>
           </p>
         </div>
 
@@ -107,14 +107,27 @@ export default function AboutUs() {
       FOUNDER
     </h2>
     <h2 className="text-5xl md:text-6xl font-bold text-white leading-[0.8] tracking-tighter uppercase">
-      SAMUEL
+      zachary 
     </h2>
   </div>
           </div>
 
           <div className="pt-10 mr-10">
             <p className="text-[#949494] text-lg leading-relaxed mb-10">
-              Sed ut perspiciatis unde omnis iste natus error sit<br/> voluptatem accusantium doloremque laudantium,<br/> totam rem aperiam, eaque ipsa quae ab illo<br/> inventore veritatis et quasi architecto beatae vitae<br/> dicta sunt explicabo. Nemo enim ipsam voluptatem<br/> quia voluptas sit aspernatur aut odit aut fugit, sed<br/> quia consequuntur magni dolores eos qui ratione<br/> voluptatem sequi nesciunt. Neque porro quisquam<br/> est, qui dolorem ipsum.
+           
+
+I come from humble beginnings selling used products on eBay in 2015 to my current eCommerce
+ storefront that I started during COVID lockdowns in 2020. <br/><br/>
+
+I like to play golf when I find myself with free time on my hands, even though
+ it seems I get worse from year to year! I also spend my days building a trading card 
+ collection and playing trombone in a local community band. <br/><br/>
+
+My wife and I currently live in Binghamton, NY with our two cats Frieza and Gouda. <br/><br/>
+
+At the end of the day, I want Cody’s Commerce, LLC to represent my values and your
+ interests mutually. This business is built for long-term growth, strong partnerships,
+  and doing things the right way from the start.
             </p>
             
 
@@ -260,7 +273,7 @@ export default function AboutUs() {
 </div>
 
         {/* FOOTER (Centered Underline Included) */}
-       <footer className="py-20 mt-4 px-4">
+      <footer className="py-20 mt-4 px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
 
             {/* Contact Inputs */}
@@ -279,20 +292,24 @@ export default function AboutUs() {
             <div className="text-center mx-auto md:text-left md:mx-0 md:ml-20">
               <h4 className="text-[#FF8D28] font-bold mb-6 tracking-widest text-2xl">Quick Links</h4>
               <div className="space-y-2 text-sm font-bold -mt-2 grid text-white justify-center md:justify-start">
-                <Link href='/AboutUs' className="hover:text-amber-500 transition-colors">About Us</Link>
-                <Link href='/CodyCommerce' className="hover:text-amber-500 transition-colors">Cody Commerce</Link>
-                <Link href='/Pricing' className="hover:text-amber-500 transition-colors">Pricing</Link>
-                <Link href='/Contact' className="hover:text-amber-500 transition-colors">Contact</Link>
+                <Link href='/aboutus' className="hover:text-[#ff8d28] transition-colors">About Us</Link>
+                <Link href='/codycommerce' className="hover:text-[#ff8d28] transition-colors">Cody Commerce</Link>
+                <Link href='/pricing' className="hover:text-[#ff8d28] transition-colors">Pricing</Link>
+                <Link href='/contact' className="hover:text-[#ff8d28] transition-colors">Contact</Link>
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="grid grid-cols-2 gap-4 md:gap-x-8 md:gap-y-6 text-[#FF8D28] w-fit mx-auto md:ml-auto md:mr-0">
-              <Link href='/' className='hover:text-white flex justify-center'><FaInstagram size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><FiTwitter size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><FiLinkedin size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><LuFacebook size={40} /></Link>
-            </div>
+           {/* Social Links */}
+<div className="flex justify-center md:justify-start items-center text-[#FF8D28]">
+  <Link 
+    href='https://www.linkedin.com/in/zachary-cody-11b0381a4/'
+    target="_blank"
+    className='hover:text-white transition-all duration-300 hover:scale-110'
+  >
+    <FiLinkedin size={40} />
+  </Link>
+</div>
+
 
           </div>
 

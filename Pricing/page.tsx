@@ -6,11 +6,12 @@ import { CiMail } from "react-icons/ci";
 import Link from 'next/link';
 import Image from 'next/image';
 import { MdDoNotDisturbOn } from "react-icons/md";
+import { FaCheck } from 'react-icons/fa'
 
 
-const Pricing = () => {
+const pricing = () => {
   return (
-     <div className="relative min-h-screen transition-colors text-white font-sans selection:bg-orange-500/30 overflow-hidden">
+    <div className="relative min-h-screen transition-colors text-white font-sans selection:bg-orange-500/30 overflow-x-hidden">
     
       <div className="absolute inset-0 bg-[#4b1f00] 
         bg-[repeating-linear-gradient(90deg,#5a2400_0px,#5a2400_60px,#4b1f00_60px,#4b1f00_120px)]">
@@ -36,20 +37,20 @@ const Pricing = () => {
             <input type="checkbox" id="menu-toggle" className="hidden peer " />
             <div className="flex justify-between items-center">
               <ul className="hidden md:flex gap-6 md:gap-8 text-sm font-bold tracking-wide text-white">
-                <Link href='/' className='hover:text-amber-600'>Home</Link>
-                <Link href='/AboutUs' className='hover:text-amber-600'>About</Link>
-                <Link href='/CodyCommerce' className='hover:text-amber-600'>Cody</Link>
-                <Link href='/Pricing' className='hover:text-amber-600'>Pricing</Link>
-                <Link href='/Contact' className='hover:text-amber-600'>Contact</Link>
+                <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+                <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
+                <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
+                <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
+                <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
               </ul>
               <label htmlFor="menu-toggle" className="md:hidden ml-auto text-white text-2xl cursor-pointer">☰</label>
             </div>
             <div className="absolute left-1 top-16 w-52 bg-neutral-900 border border-white/20 rounded-2xl p-6 flex-col gap-4 text-white hidden peer-checked:flex md:hidden">
-              <Link href='/' className='hover:text-amber-600'>Home</Link>
-              <Link href='/AboutUs' className='hover:text-amber-600'>About</Link>
-              <Link href='/CodyCommerce' className='hover:text-amber-600'>Cody</Link>
-              <Link href='/Pricing' className='hover:text-amber-600'>Pricing</Link>
-              <Link href='/Contact' className='hover:text-amber-600'>Contact</Link>
+              <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+                <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
+                <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
+                <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
+                <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
             </div>
           </nav>
 </section>
@@ -63,244 +64,432 @@ const Pricing = () => {
             <p className="text-sm whitespace-nowrap mt-2 md:text-xl">The reason our framework provides superior results compared to<br/>alternative platforms.</p>
 </div>
 
-   <div className="h-150 w-7xl mt-30 border-2 shadow-[inset_0_2px_10px_rgba(255,255,255,0.2)] border-white/30 ml-30 rounded-4xl  bg-linear-to-b from-[#331d0a] to-[#652c0b]/50 flex items-center justify-center p-6">
-  <div className="relative w-full max-w-7xl mx-auto rounded-4xl border shadow-[inset_0_-10px_30px_rgba(96,40,9,5)] border-b-[#EEFF00]/40 border-white/20  bg-linear-to-b from-[#121212] to-[#2e1111]  overflow-hidden">
-
-        {/* MAIN TABLE GRID */}
-        <div className="grid grid-cols-6 text-sm text-gray-300">
-
-          {/* LEFT FEATURE TABLE */}
-          <div className="border-r border-white/10  ">
-            <div className='p-11 border-b mt-5 border-white/10'></div>
-            {/* Row 1 */}
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-white text-xl font-semibold mb-1">Strategic <br/> Guidance</h3>
-         
-            </div>
-
-            {/* Row 2 */}
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-white text-xl text-nowrap font-semibold mb-1">Sales & Brand <br/> Control</h3>
-             
-            </div>
-
-            {/* Row 3 */}
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-white text-xl font-semibold mb-1">Fulfillment & Logistics</h3>
-              
-            </div>
-
-            {/* Row 4 */}
-            <div className="p-6">
-              <h3 className="text-white text-xl font-semibold mb-1">Ecosystem Protection</h3>
-              
-            </div>
-          </div>
-
-          {/* COLUMN 1 */}
-            <div className=" ">
-            <div className='p-11 border-b mt-5 border-white/10'></div>
-            {/* Row 1 */}
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-white text-sm text-nowrap ">
-                High Level Growth Strategy <br/> 1-1 Dedicated Expert<br/>Strict MAP Compliance</h3>
-         
-            </div>
-
-            {/* Row 2 */}
-            <div className="p-3 border-b mt-6 border-white/10">
-             <h3 className="text-white text-sm tracking-wider text-nowrap ">
-                Complete Catalog Optimization <br/> High Volume Purchase Order<br/>Full Data Transparency</h3>
-             
-            </div>
-
-            {/* Row 3 */}
-            <div className="p-6 border-b border-white/10">
-             <h3 className="text-white text-sm tracking-wider text-nowrap ">
-                Custom Prep & Labeling<br/> Accelerated Prime Delivery<br/>End to End Returns Management</h3>
-              
-            </div>
-
-            {/* Row 4 */}
-            <div className="p-6">
-            <h3 className="text-white text-sm tracking-wider text-nowrap ">
-                Strict Platform Compliance <br/> Listing Hijacker Protection<br/>Proactive Account Health<br/>Advance PPC Scaling</h3>
-              
-            </div>
-          </div>
-
-          {/* COLUMN 2 */}
-          <div className="border-r border-white/10  ">
-            <div className='p-11 border-b mt-5 border-white/10'></div>
-            {/* Row 1 */}
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-transparent text-xl font-semibold mb-1">Strategic <br/> Guidance</h3>
-         
-            </div>
-
-            {/* Row 2 */}
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-transparent text-xl font-semibold mb-1">Sales & Brand Control</h3>
-             
-            </div>
-
-            {/* Row 3 */}
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-transparent text-xl font-semibold mb-1">Fulfillment & Logistics</h3>
-              
-            </div>
-
-            {/* Row 4 */}
-            <div className="p-6">
-              <h3 className="text-transparent text-xl font-semibold mb-1">Ecosystem Protection</h3>
-              
-            </div>
-          </div>
-
-          {/* COLUMN 3 */}
-     {/* COLUMN 3 */}
-<div className="border-r  border-white/10 text-center flex flex-col">
-  <div className="p-8.25 border-b ml-6  border-white/10 text-lg text-[#929292]"><h1 className=''>1P Vendor Control</h1></div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center mb-7 gap-2">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-</div>
-
-{/* COLUMN 4 */}
-<div className="border-r border-white/10 text-center flex flex-col">
-  <div className="p-8.25 border-b border-white/10 text-lg text-[#929292]">Traditional 3P Resellers</div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center mb-7 gap-2">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-</div>
-
-{/* COLUMN 5 */}
-<div className="text-center flex flex-col">
-  <div className="p-11.75 border-b border-white/10 text-lg text-[#929292]">In House</div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 border-b border-white/10">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-
-  <div className="flex-1 flex flex-col justify-center items-center gap-2 mb-7">
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-    <span className="w-3 h-3 text-xl text-gray-500 rounded-full"><MdDoNotDisturbOn /></span>
-  </div>
-</div>
-
+    <div className="min-h-fit shadow-[inset_0_-10px_30px_rgba(96,40,9,5)]
+    rounded-4xl border-b-[#EEFF00]/40 border-white/20 border bg-linear-to-b from-[#121212] to-[#2e1111]
+     flex items-center max-w-6xl justify-center mt-20 p-4 sm:p-6  mx-auto">
+      <div className="w-full max-w-6xl">
+        {/* Outer Border Container */}
+        <div className="relative p-[2px] rounded-4xl border shadow-[inset_0_-10px_30px_rgba(96,40,9,5)] border-b-[#EEFF00]/40 border-white/20 bg-linear-to-b from-[#121212] to-[#2e1111] shadow-2xl">
           
-        </div>
-
-{/* COLUMN 5 */}
-   
-
-
-        {/* CODY COLUMN (SEPARATE TABLE OVERLAY) */}
-        <div className="absolute top-0 left-[37.5%]  w-55 h-full pointer-events-none">
-          <div className="m-3 h-[calc(100%-24px)]  rounded-4xl bg-linear-to-b from-[#F27507] to-[#5E2F06] border-2 border-[#EEFF00] flex flex-col">
-
-           <div className="p-5.5 text-center font-semibold text-white text-lg whitespace-nowrap border-b-4 border-[#0B0B0B]/50 [text-shadow:0_2px_6px_rgba(0,0,0,0.4)]">
-  Cody Commerce<br />Partnership
-</div>
-
-          <div className="flex-1 flex flex-col justify-center items-center border-b-4 border-[#0B0B0B]/50">
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-</div>
-
-<div className="flex-1 flex flex-col justify-center items-center  border-b-4 border-[#0B0B0B]/50">
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-</div>
-
-<div className="flex-1 flex flex-col justify-center items-center  border-b-4  border-[#0B0B0B]/50">
+          {/* Inner Container with Grid Lines */}
+          <div className="relative rounded-[28px] bg-linear-to-b from-[#121212] to-[#2e1111] overflow-hidden">
+            
+            {/* Cody Commerce Overlay Column - Positioned Absolutely */}
+           <div className="absolute 
+  left-[20%] sm:left-[20%]
   
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-</div>
+  top-0 bottom-5 
+  w-[20%] sm:w-[20%] 
+  z-20 pointer-events-none">
 
-<div className="flex-1 flex flex-col justify-center items-center ">
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-  <span><span className="text-[#FFE100]">✔</span> Yes</span>
-</div>
-          </div>
-        </div>
+  <div className="h-full flex flex-col rounded-[28px] 
+    bg-gradient-to-b from-[#F27507] to-[#5E2F06] 
+    border border-yellow-300/60
+    shadow-[0_0_25px_rgba(255,200,0,0.25),inset_0_-10px_25px_rgba(0,0,0,0.4)]">
 
-        {/* INNER GRID GLOW */}
-        <div className="absolute inset-0 rounded-2xl border border-orange-400/20 pointer-events-none" />
-      </div>
+    {/* HEADER */}
+    <div className="flex items-center justify-center 
+      h-16 sm:h-20 md:h-36 
+      text-center px-3 
+      border-b border-black/40">
+
+      <h3 className="text-white lg:font-semibold 
+        text-sm sm:text-sm lg:text-lg leading-tight">
+        Cody Commerce<br />Partnership
+      </h3>
     </div>
 
+    {/* ROWS */}
+    {[
+      3, // row 1
+      3, // row 2
+      3, // row 3
+      4  // row 4
+    ].map((count, i) => (
+      <div
+        key={i}
+        className="flex-1 flex flex-col items-center justify-center 
+        border-b border-black/40 space-y-6 mt-15">
 
+        {[...Array(count)].map((_, j) => (
+          <span key={j} className="text-white text-xs sm:text-sm md:text-base">
+            <span className="text-yellow-300 drop-shadow-[0_0_6px_#FFE100]">✔</span> Yes
+          </span>
+        ))}
+      </div>
+    ))}
 
+  </div>
+</div>
 
+            {/* Table Content */}
+            <div className="relative z-0 p-4 sm:p-6 lg:p-8">
+              
+              {/* Header Row */}
+              <div className="grid grid-cols-5 gap-0 mb-0 border-b border-white/10">
+                <div className="h-20 sm:h-24 lg:h-28 border-r border-white/10"></div>
+                
+                {/* Cody Commerce - Transparent to show overlay */}
+                <div className="h-20 sm:h-24 lg:h-28 border-r border-white/10"></div>
+                
+                {/* 3P Vendor Central */}
+                <div className="h-20 sm:h-24 lg:h-28 flex items-center justify-center border-r border-white/10 ">
+                  <h3 className="text-gray-400  text-xs sm:text-sm lg:text-xl text-center px-2 leading-tight">
+                    3P Vendor<br />Central
+                  </h3>
+                </div>
+                
+                {/* Traditional 3P Resellers */}
+                <div className="h-20 sm:h-24 lg:h-28 flex items-center justify-center border-r border-white/10 ">
+                  <h3 className="text-gray-400  text-xs sm:text-sm lg:text-xl text-center px-2 leading-tight">
+                    Traditional 3P<br />Resellers
+                  </h3>
+                </div>
+                
+                {/* In House */}
+                <div className="h-20 sm:h-24 lg:h-28 flex items-center justify-center ">
+                  <h3 className="text-gray-400  text-xs sm:text-sm lg:text-xl text-center px-2 leading-tight">
+                    In House
+                  </h3>
+                </div>
+              </div>
 
-  <footer className="py-20 mt-4 px-4">
+              {/* Strategic Guidance Section */}
+              <div className="border-b border-gray-700/50">
+                {/* Section Header */}
+                <div className="grid grid-cols-5 gap-0">
+                  <div className="py-3 sm:py-6 px-2 sm:px-3 border-r border-gray-700/50 ">
+                    <h4 className="text-white font-bold text-xs sm:text-sm lg:text-lg leading-tight">
+                      Strategic<br />Guidance
+                    </h4>
+                  </div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div></div>
+                </div>
+
+                {/* High Level Growth Strategy */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-2.5 border-r border-gray-700/50 flex items-center ">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">High Level Growth Strategy</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50 ">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50 ">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* 1:1 Dedicated Expert */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">1:1 Dedicated Expert</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* Strict MAP Compliance */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Strict MAP Compliance</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+              </div>
+
+              {/* Sales & Brand Control Section */}
+              <div className="border-b border-gray-700/50">
+                {/* Section Header */}
+                <div className="grid grid-cols-5 gap-0">
+                  <div className="py-3 sm:py-4 px-2 sm:px-3 border-r border-gray-700/50">
+                    <h4 className="text-white font-bold text-xs sm:text-sm lg:text-lg leading-tight">
+                      Sales & Brand<br />Control
+                    </h4>
+                  </div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div></div>
+                </div>
+
+                {/* Complete Catalog Optimization */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Complete Catalog Optimization</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* High Volume Purchase Order */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">High Volume Purchase Order</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* Full Data Transparency */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Full Data Transparency</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+              </div>
+
+              {/* Fulfillment & Logistics Section */}
+              <div className="border-b border-gray-700/50">
+                {/* Section Header */}
+                <div className="grid grid-cols-5 gap-0">
+                  <div className="py-3 sm:py-4 px-2 sm:px-3 border-r border-gray-700/50">
+                    <h4 className="text-white font-bold text-xs sm:text-sm lg:text-lg leading-tight">
+                      Fulfillment &<br />Logistics
+                    </h4>
+                  </div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div></div>
+                </div>
+
+                {/* Custom Prep & Labeling */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Custom Prep & Labeling</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* Accelerated Prime Delivery */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Accelerated Prime Delivery</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center ">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* End to End Returns Management */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">End to End Returns Management</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+              </div>
+
+              {/* Ecosystem Protection Section */}
+              <div>
+                {/* Section Header */}
+                <div className="grid grid-cols-5 gap-0">
+                  <div className="py-3 sm:py-4 px-2 sm:px-3 border-r border-gray-700/50">
+                    <h4 className="text-white font-bold text-xs sm:text-sm lg:text-lg leading-tight">
+                      Ecosystem<br />Protection
+                    </h4>
+                  </div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div className="border-r border-gray-700/50"></div>
+                  <div></div>
+                </div>
+
+                {/* Strict Platform Compliance */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Strict Platform Compliance</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* Listing Hijacker Protection */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Listing Hijacker Protection</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* Proactive Account Health */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Proactive Account Health</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+
+                {/* Advance PPC & Scaling */}
+                <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
+                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Advance PPC & Scaling</p>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                    <FaCheck  />
+                    <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                    <MdDoNotDisturbOn />
+                  </div>
+                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center">
+                    <MdDoNotDisturbOn />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+<div>
+            <p className='text-white text-center tracking-widest text-sm mt-12 md:mt-50'>
+              Partner with us today to transform your eCommerce strategy into <br/> a scalable success story
+            </p>
+          </div>
+   <footer className="py-20 mt-4 px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
 
             {/* Contact Inputs */}
@@ -319,30 +508,34 @@ const Pricing = () => {
             <div className="text-center mx-auto md:text-left md:mx-0 md:ml-20">
               <h4 className="text-[#FF8D28] font-bold mb-6 tracking-widest text-2xl">Quick Links</h4>
               <div className="space-y-2 text-sm font-bold -mt-2 grid text-white justify-center md:justify-start">
-                <Link href='/AboutUs' className="hover:text-amber-500 transition-colors">About Us</Link>
-                <Link href='/CodyCommerce' className="hover:text-amber-500 transition-colors">Cody Commerce</Link>
-                <Link href='/Pricing' className="hover:text-amber-500 transition-colors">Pricing</Link>
-                <Link href='/Contact' className="hover:text-amber-500 transition-colors">Contact</Link>
+                <Link href='/aboutus' className="hover:text-[#ff8d28] transition-colors">About Us</Link>
+                <Link href='/codycommerce' className="hover:text-[#ff8d28] transition-colors">Cody Commerce</Link>
+                <Link href='/pricing' className="hover:text-[#ff8d28] transition-colors">Pricing</Link>
+                <Link href='/contact' className="hover:text-[#ff8d28] transition-colors">Contact</Link>
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="grid grid-cols-2 gap-4 md:gap-x-8 md:gap-y-6 text-[#FF8D28] w-fit mx-auto md:ml-auto md:mr-0">
-              <Link href='/' className='hover:text-white flex justify-center'><FaInstagram size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><FiTwitter size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><FiLinkedin size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><LuFacebook size={40} /></Link>
-            </div>
+           {/* Social Links */}
+<div className="flex justify-center md:justify-start items-center text-[#FF8D28]">
+  <Link 
+    href='https://www.linkedin.com/in/zachary-cody-11b0381a4/'
+    target="_blank"
+    className='hover:text-white transition-all duration-300 hover:scale-110'
+  >
+    <FiLinkedin size={40} />
+  </Link>
+</div>
+
 
           </div>
 
           <div className="w-full mt-24 max-w-4xl mx-auto border-t border-[#7B7878]"></div>
         </footer>
-</div></div>
+</div>
 
-
+</div>
 
   )
 }
 
-export default Pricing
+export default pricing

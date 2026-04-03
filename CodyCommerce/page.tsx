@@ -7,9 +7,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { TbSettings2 } from "react-icons/tb";
 
-const CodyCommerce = () => {
+const codycommerce = () => {
   return (
-    <div className="relative min-h-screen transition-colors text-white font-sans selection:bg-orange-500/30 overflow-x-hidden">
+    <div className="relative min-h-screen transition-colors text-white font-sans selection:bg-orange-500/30 ">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-[#4b1f00] bg-[repeating-linear-gradient(90deg,#5a2400_0px,#5a2400_60px,#4b1f00_60px,#4b1f00_120px)]">
       </div>
@@ -20,7 +20,7 @@ const CodyCommerce = () => {
       
       <div className="relative z-10">
         {/* Navigation Section */}
-        <section className="relative flex flex-col items-center pt-6 md:pt-10 px-4 overflow-hidden">
+        <section className="relative flex flex-col items-center pt-6 md:pt-10 px-4 ">
           <div className="absolute inset-0 opacity-10 pointer-events-none" 
             style={{ background: 'repeating-linear-gradient(90deg, transparent, transparent 80px, #4a2b00 80px, #4a2b00 81px)' }}>
           </div>
@@ -33,20 +33,20 @@ const CodyCommerce = () => {
             <input type="checkbox" id="menu-toggle" className="hidden peer " />
             <div className="flex justify-between items-center">
               <ul className="hidden md:flex gap-6 md:gap-8 text-sm font-bold tracking-wide text-white">
-                <Link href='/' className='hover:text-amber-600'>Home</Link>
-                <Link href='/AboutUs' className='hover:text-amber-600'>About</Link>
-                <Link href='/CodyCommerce' className='hover:text-amber-600'>Cody</Link>
-                <Link href='/Pricing' className='hover:text-amber-600'>Pricing</Link>
-                <Link href='/Contact' className='hover:text-amber-600'>Contact</Link>
+                <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+                <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
+                <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
+                <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
+                <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
               </ul>
               <label htmlFor="menu-toggle" className="md:hidden ml-auto text-white text-2xl cursor-pointer">☰</label>
             </div>
             <div className="absolute left-1 top-16 w-52 bg-neutral-900 border border-white/20 rounded-2xl p-6 flex-col gap-4 text-white hidden peer-checked:flex md:hidden">
-              <Link href='/' className='hover:text-amber-600'>Home</Link>
-              <Link href='/AboutUs' className='hover:text-amber-600'>About</Link>
-              <Link href='/CodyCommerce' className='hover:text-amber-600'>Cody</Link>
-              <Link href='/Pricing' className='hover:text-amber-600'>Pricing</Link>
-              <Link href='/Contact' className='hover:text-amber-600'>Contact</Link>
+              <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+                <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
+                <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
+                <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
+                <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
             </div>
           </nav>
         </section>
@@ -55,7 +55,7 @@ const CodyCommerce = () => {
   
 {/* Vertical Line */}
 <div className="hidden lg:block xl:block absolute left-[15%]  lg:left-[23%] xl:left-[25%] -translate-x-1/2
-   lg:top-45 xl:top-42 bottom-0 
+   lg:top-47 xl:top-42  bottom-0 
   w-0.5 bg-[#FFE100] shadow-[0_0_25px_#facc15]
   md:h-[57%] lg:h-[58%] xl:h-[58%]" />
   <div className="relative max-w-7xl mx-auto space-y-16 sm:space-y-20 md:space-y-28 lg:space-y-40">
@@ -80,7 +80,7 @@ const CodyCommerce = () => {
               Precision Advertising Our in-house advertising specialists design targeted PPC campaigns aligned with your financial goals. We continuously optimize for ROI to accelerate sales velocity and capture market share.<br/><br/> <span className="text-[#FFE100] text-base sm:text-xl mr-2">●</span> Brand Visibility Programs Cody's Commerce goes beyond the buy box. We implement strategic marketing initiatives designed to enhance your brand authority and ensure your products stand out wherever your customers are searching. </p> </div>
 
       {/* Icon */}
-<div className="hidden lg:block xl:block  absolute left-[15%] lg:left-[22.25%] xl:left-[20.75%] top-1/2 -translate-x-1/2 -translate-y-64 items-center justify-center">
+<div className="hidden lg:block xl:block  absolute left-[15%] lg:left-[22.25%] xl:left-[23.75%] top-1/2 -translate-x-1/2 -translate-y-64 items-center justify-center">
   
   <div className="text-[#FFE100] drop-shadow-[0_0_8px_#facc15] text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
     <TbSettings2 />
@@ -94,7 +94,7 @@ const CodyCommerce = () => {
     <div className="relative flex flex-col lg:flex-row justify-center  items-center gap-6 sm:gap-8 lg:gap-12">
 
       {/* Icon */}
-<div className="hidden lg:block xl:block  absolute left-[15%]  lg:left-[22.25%] xl:left-[20.75%] top-1/2 -translate-x-1/2 -translate-y-80 items-center justify-center">
+<div className="hidden lg:block xl:block  absolute left-[15%]  lg:left-[22.25%] xl:left-[23.75%] top-1/2 -translate-x-1/2 -translate-y-80 items-center justify-center">
   <div className="relative flex items-center justify-center">
     {/* Dark circular background */}
     <div className="absolute w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-[#231000] rounded-full z-0"></div>
@@ -148,7 +148,7 @@ promotional slots, and high-visibility opportunities that aren't<br/>
 available to the general public.<br/><br/> </p> </div>
 
       {/* Icon */}
-<div className="hidden lg:block xl:block absolute left-[15%]  lg:left-[22.25%] xl:left-[20.75%] top-1/2 -translate-x-1/2 -translate-y-80 items-center justify-center">
+<div className="hidden lg:block xl:block absolute left-[15%]  lg:left-[22.25%] xl:left-[23.75%] top-1/2 -translate-x-1/2 -translate-y-80 items-center justify-center">
   
   <div className="text-[#FFE100] drop-shadow-[0_0_8px_#facc15] text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
     <TbSettings2 />
@@ -157,11 +157,17 @@ available to the general public.<br/><br/> </p> </div>
 </div>
 
   </div>
+    
   </div>
+  
 </section>
-
+  <div>
+            <p className='text-white text-center tracking-widest text-sm mt-12 md:mt-50'>
+              Partner with us today to transform your eCommerce strategy into <br/> a scalable success story
+            </p>
+          </div>
         {/* Footer */}
-         <footer className="py-20 mt-4 px-4">
+        <footer className="py-20 mt-4 px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
 
             {/* Contact Inputs */}
@@ -180,20 +186,24 @@ available to the general public.<br/><br/> </p> </div>
             <div className="text-center mx-auto md:text-left md:mx-0 md:ml-20">
               <h4 className="text-[#FF8D28] font-bold mb-6 tracking-widest text-2xl">Quick Links</h4>
               <div className="space-y-2 text-sm font-bold -mt-2 grid text-white justify-center md:justify-start">
-                <Link href='/AboutUs' className="hover:text-amber-500 transition-colors">About Us</Link>
-                <Link href='/CodyCommerce' className="hover:text-amber-500 transition-colors">Cody Commerce</Link>
-                <Link href='/Pricing' className="hover:text-amber-500 transition-colors">Pricing</Link>
-                <Link href='/Contact' className="hover:text-amber-500 transition-colors">Contact</Link>
+                <Link href='/aboutus' className="hover:text-[#ff8d28] transition-colors">About Us</Link>
+                <Link href='/codycommerce' className="hover:text-[#ff8d28] transition-colors">Cody Commerce</Link>
+                <Link href='/pricing' className="hover:text-[#ff8d28] transition-colors">Pricing</Link>
+                <Link href='/contact' className="hover:text-[#ff8d28] transition-colors">Contact</Link>
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="grid grid-cols-2 gap-4 md:gap-x-8 md:gap-y-6 text-[#FF8D28] w-fit mx-auto md:ml-auto md:mr-0">
-              <Link href='/' className='hover:text-white flex justify-center'><FaInstagram size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><FiTwitter size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><FiLinkedin size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><LuFacebook size={40} /></Link>
-            </div>
+           {/* Social Links */}
+<div className="flex justify-center md:justify-start items-center text-[#FF8D28]">
+  <Link 
+    href='https://www.linkedin.com/in/zachary-cody-11b0381a4/'
+    target="_blank"
+    className='hover:text-white transition-all duration-300 hover:scale-110'
+  >
+    <FiLinkedin size={40} />
+  </Link>
+</div>
+
 
           </div>
 
@@ -206,4 +216,4 @@ available to the general public.<br/><br/> </p> </div>
   );
 };
 
-export default CodyCommerce;
+export default codycommerce;

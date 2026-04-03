@@ -28,20 +28,20 @@ export default function HomePage() {
             <input type="checkbox" id="menu-toggle" className="hidden peer " />
             <div className="flex justify-between items-center">
               <ul className="hidden md:flex gap-6 md:gap-8 text-sm font-bold tracking-wide text-white">
-                <Link href='/' className='hover:text-amber-600'>Home</Link>
-                <Link href='/AboutUs' className='hover:text-amber-600'>About</Link>
-                <Link href='/CodyCommerce' className='hover:text-amber-600'>Cody</Link>
-                <Link href='/Pricing' className='hover:text-amber-600'>Pricing</Link>
-                <Link href='/Contact' className='hover:text-amber-600'>Contact</Link>
+                <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+                <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
+                <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
+                <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
+                <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
               </ul>
               <label htmlFor="menu-toggle" className="md:hidden ml-auto text-white text-2xl cursor-pointer">☰</label>
             </div>
             <div className="absolute left-1 top-16 w-52 bg-neutral-900 border border-white/20 rounded-2xl p-6 flex-col gap-4 text-white hidden peer-checked:flex md:hidden">
-              <Link href='/' className='hover:text-amber-600'>Home</Link>
-              <Link href='/AboutUs' className='hover:text-amber-600'>About</Link>
-              <Link href='/CodyCommerce' className='hover:text-amber-600'>Cody</Link>
-              <Link href='/Pricing' className='hover:text-amber-600'>Pricing</Link>
-              <Link href='/Contact' className='hover:text-amber-600'>Contact</Link>
+              <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+              <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
+              <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
+              <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
+              <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
             </div>
           </nav>
 
@@ -226,7 +226,7 @@ export default function HomePage() {
         </section>
 
         {/* Footer */}
-        <footer className="py-20 mt-4 px-4">
+      <footer className="py-20 mt-4 px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
 
             {/* Contact Inputs */}
@@ -245,20 +245,24 @@ export default function HomePage() {
             <div className="text-center mx-auto md:text-left md:mx-0 md:ml-20">
               <h4 className="text-[#FF8D28] font-bold mb-6 tracking-widest text-2xl">Quick Links</h4>
               <div className="space-y-2 text-sm font-bold -mt-2 grid text-white justify-center md:justify-start">
-                <Link href='/AboutUs' className="hover:text-amber-500 transition-colors">About Us</Link>
-                <Link href='/CodyCommerce' className="hover:text-amber-500 transition-colors">Cody Commerce</Link>
-                <Link href='/Pricing' className="hover:text-amber-500 transition-colors">Pricing</Link>
-                <Link href='/Contact' className="hover:text-amber-500 transition-colors">Contact</Link>
+                <Link href='/aboutus' className="hover:text-[#ff8d28] transition-colors">About Us</Link>
+                <Link href='/codycommerce' className="hover:text-[#ff8d28] transition-colors">Cody Commerce</Link>
+                <Link href='/pricing' className="hover:text-[#ff8d28] transition-colors">Pricing</Link>
+                <Link href='/contact' className="hover:text-[#ff8d28] transition-colors">Contact</Link>
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="grid grid-cols-2 gap-4 md:gap-x-8 md:gap-y-6 text-[#FF8D28] w-fit mx-auto md:ml-auto md:mr-0">
-              <Link href='/' className='hover:text-white flex justify-center'><FaInstagram size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><FiTwitter size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><FiLinkedin size={40} /></Link>
-              <Link href='/' className='hover:text-white flex justify-center'><LuFacebook size={40} /></Link>
-            </div>
+           {/* Social Links */}
+<div className="flex justify-center md:justify-start items-center text-[#FF8D28]">
+  <Link 
+    href='https://www.linkedin.com/in/zachary-cody-11b0381a4/'
+    target="_blank"
+    className='hover:text-white transition-all duration-300 hover:scale-110'
+  >
+    <FiLinkedin size={40} />
+  </Link>
+</div>
+
 
           </div>
 
