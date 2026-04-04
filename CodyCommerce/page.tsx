@@ -80,7 +80,7 @@ const codycommerce = () => {
               Precision Advertising Our in-house advertising specialists design targeted PPC campaigns aligned with your financial goals. We continuously optimize for ROI to accelerate sales velocity and capture market share.<br/><br/> <span className="text-[#FFE100] text-base sm:text-xl mr-2">●</span> Brand Visibility Programs Cody's Commerce goes beyond the buy box. We implement strategic marketing initiatives designed to enhance your brand authority and ensure your products stand out wherever your customers are searching. </p> </div>
 
       {/* Icon */}
-<div className="hidden lg:block xl:block  absolute left-[15%] lg:left-[22.25%] xl:left-[23.75%] top-1/2 -translate-x-1/2 -translate-y-64 items-center justify-center">
+<div className="hidden lg:block xl:block  absolute left-[15%] lg:left-[22.25%] xl:left-[23.75%] 2xl:left-[18%] top-1/2 -translate-x-1/2 -translate-y-64 items-center justify-center">
   
   <div className="text-[#FFE100] drop-shadow-[0_0_8px_#facc15] text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
     <TbSettings2 />
@@ -94,7 +94,7 @@ const codycommerce = () => {
     <div className="relative flex flex-col lg:flex-row justify-center  items-center gap-6 sm:gap-8 lg:gap-12">
 
       {/* Icon */}
-<div className="hidden lg:block xl:block  absolute left-[15%]  lg:left-[22.25%] xl:left-[23.75%] top-1/2 -translate-x-1/2 -translate-y-80 items-center justify-center">
+<div className="hidden lg:block xl:block  absolute left-[15%]  lg:left-[22.25%] xl:left-[23.75%] 2xl:left-[18%] top-1/2 -translate-x-1/2 -translate-y-80 items-center justify-center">
   <div className="relative flex items-center justify-center">
     {/* Dark circular background */}
     <div className="absolute w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 bg-[#231000] rounded-full z-0"></div>
@@ -148,7 +148,7 @@ promotional slots, and high-visibility opportunities that aren't<br/>
 available to the general public.<br/><br/> </p> </div>
 
       {/* Icon */}
-<div className="hidden lg:block xl:block absolute left-[15%]  lg:left-[22.25%] xl:left-[23.75%] top-1/2 -translate-x-1/2 -translate-y-80 items-center justify-center">
+<div className="hidden lg:block xl:block absolute left-[15%]  lg:left-[22.25%] xl:left-[23.75%] 2xl:left-[18%] top-1/2 -translate-x-1/2 -translate-y-80 items-center justify-center">
   
   <div className="text-[#FFE100] drop-shadow-[0_0_8px_#facc15] text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
     <TbSettings2 />

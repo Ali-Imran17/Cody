@@ -59,13 +59,13 @@ export default function HomePage() {
 </div>
 
           {/* Headline */}
-          <h1 className="text-3xl md:text-4xl  lg:text-5xl font-bold mb-12 text-center">
+          <h1 className="text-xl md:text-4xl text-nowrap  lg:text-5xl font-bold mb-12 text-center">
             Strategic Brand Expansion and <br />
-            <span className="text-white font-bold text-3xl lg:text-5xl md:text-4xl">
+            <span className="text-white font-bold text-xl lg:text-5xl md:text-4xl">
               Unlocking Revenue Streams for
             </span>
             <p className='text-xs md:text-sm font-light mt-4'>
-              From Listing to Logistics: Powering Your Growth Across North America
+              From Listing to Logistics: Powering Your Growth<br className="block sm:hidden"/> Across North America
             </p>
           </h1>
 
@@ -128,8 +128,8 @@ export default function HomePage() {
         <section className="py-32 px-4 relative">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Scale Your Brand with a Partner Who Invests in You<br/>
+              <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
+                Scale Your Brand with a Partner Who Invests in You<br/><br className='block sm:hidden'/>
                 Your dedicated team for eCommerce acceleration
               </h2>
             </div>
@@ -159,7 +159,7 @@ export default function HomePage() {
         {/* Milestones Section */}
         <section className="py-32 md:items-start sm:items-start text-center">
           <div className="flex flex-wrap justify-center mb-2 mt-10 mr-40 md:mr-80 md:mt-20">
-            <span className="bg-[#FF8D28] px-1 py-1 font-medium text-sm md:text-lg">LAUNCH YOUR NEXT CHAPTER</span>
+            <span className="bg-[#FF8D28] px-1 py-1 font-medium text-xs md:text-lg">LAUNCH YOUR NEXT CHAPTER</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-medium text-white mb-16">Your Roadmap to Revenue</h2>
           <p className="text-white -mt-10 tracking-widest text-xs md:text-sm">

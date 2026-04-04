@@ -23,7 +23,7 @@ const pricing = () => {
       </div>
       <div className="relative z-10">
 
-   <section className="relative  flex flex-col items-center pt-10 px-4 overflow-hidden">
+     <section className="relative  flex flex-col items-center pt-10 px-4 ">
         <div className="absolute inset-0 opacity-10 pointer-events-none" 
              style={{ background: 'repeating-linear-gradient(90deg, transparent, transparent 80px, #4a2b00 80px, #4a2b00 81px)' }}>
         </div>
@@ -33,40 +33,58 @@ const pricing = () => {
           Cody
         </Link>
 
-     <nav className="z-50 relative bg-neutral-900 backdrop-blur-2xl border border-white/30 px-4 md:px-8 py-3 rounded-full mb-16 shadow-[inset_0_2px_10px_rgba(255,255,255,0.2)]">
-            <input type="checkbox" id="menu-toggle" className="hidden peer " />
-            <div className="flex justify-between items-center">
-              <ul className="hidden md:flex gap-6 md:gap-8 text-sm font-bold tracking-wide text-white">
+    <nav className="z-50 relative bg-neutral-900 backdrop-blur-2xl border border-white/30 px-4 md:px-8 py-3 rounded-full mb-16 shadow-[inset_0_2px_10px_rgba(255,255,255,0.2)]">
+             <input type="checkbox" id="menu-toggle" className="hidden peer " />
+             <div className="flex justify-between items-center">
+               <ul className="hidden md:flex gap-6 md:gap-8 text-sm font-bold tracking-wide text-white">
                 <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
                 <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
                 <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
                 <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
                 <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
-              </ul>
-              <label htmlFor="menu-toggle" className="md:hidden ml-auto text-white text-2xl cursor-pointer">☰</label>
-            </div>
-            <div className="absolute left-1 top-16 w-52 bg-neutral-900 border border-white/20 rounded-2xl p-6 flex-col gap-4 text-white hidden peer-checked:flex md:hidden">
-              <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
+               </ul>
+               <label htmlFor="menu-toggle" className="md:hidden ml-auto text-white text-2xl cursor-pointer">☰</label>
+             </div>
+             <div className="absolute left-1 top-16 w-52 bg-neutral-900 border border-white/20 rounded-2xl p-6 flex-col gap-4 text-white hidden peer-checked:flex md:hidden">
+                <Link href='/' className='hover:text-[#ff8d28]'>Home</Link>
                 <Link href='/aboutus' className='hover:text-[#ff8d28]'>About</Link>
                 <Link href='/codycommerce' className='hover:text-[#ff8d28]'>Cody</Link>
                 <Link href='/pricing' className='hover:text-[#ff8d28]'>Pricing</Link>
                 <Link href='/contact' className='hover:text-[#ff8d28]'>Contact</Link>
-            </div>
-          </nav>
+             </div>
+           </nav>
 </section>
 
  <div className="mt-28 text-center">
             <h2 className="text-3xl md:text-5xl drop-shadow-amber-600/40 drop-shadow-lg font-medium text-[#FF8D28]">COST is NON Existent</h2>
-            <p className="text-sm whitespace-nowrap mt-2 md:text-xl">The reality is, you profit from us. We are dead serious about this model.<br/>Dive into the logistics in the section that follows.</p>
+            <p className="text-sm whitespace-nowrap mt-2 md:text-xl">The reality is, you profit from us.<br className="block sm:hidden"/> We are dead serious about this model.<br/>Dive into the logistics in the section that follows.</p>
 </div>
- <div className="mt-50 text-center">
+ <div className="mt-40 text-center">
             <h2 className="text-3xl md:text-5xl drop-shadow-amber-600/40 drop-shadow-lg font-medium text-[#FF8D28]">Rise Above the Chaos</h2>
-            <p className="text-sm whitespace-nowrap mt-2 md:text-xl">The reason our framework provides superior results compared to<br/>alternative platforms.</p>
+            <p className="text-sm whitespace-nowrap mt-2 md:text-xl">The reason our framework provides <br className="block sm:hidden"/> superior results compared to<br/>alternative platforms.</p>
 </div>
 
-    <div className="min-h-fit shadow-[inset_0_-10px_30px_rgba(96,40,9,5)]
-    rounded-4xl border-b-[#EEFF00]/40 border-white/20 border bg-linear-to-b from-[#121212] to-[#2e1111]
-     flex items-center max-w-6xl justify-center mt-20 p-4 sm:p-6  mx-auto">
+   <div className="
+  w-full
+  max-w-6xl
+  mx-auto
+
+  mt-10 sm:mt-14 md:mt-20
+
+  p-1 sm:p-6 md:p-8 lg:p-10
+
+  flex items-center justify-center
+
+  rounded-4xl sm:rounded-3xl md:rounded-4xl
+
+  border border-white/20 border-b-[#EEFF00]/40
+
+  shadow-[inset_0_-10px_30px_rgba(96,40,9,0.5)]
+
+  bg-gradient-to-b from-[#121212] to-[#2e1111]
+
+  min-h-[150px] sm:min-h-[200px] md:min-h-[250px]
+">
       <div className="w-full max-w-6xl">
         {/* Outer Border Container */}
         <div className="relative p-[2px] rounded-4xl border shadow-[inset_0_-10px_30px_rgba(96,40,9,5)] border-b-[#EEFF00]/40 border-white/20 bg-linear-to-b from-[#121212] to-[#2e1111] shadow-2xl">
@@ -75,8 +93,8 @@ const pricing = () => {
           <div className="relative rounded-[28px] bg-linear-to-b from-[#121212] to-[#2e1111] overflow-hidden">
             
             {/* Cody Commerce Overlay Column - Positioned Absolutely */}
-           <div className="absolute 
-  left-[20%] sm:left-[20%]
+           <div className="absolute
+  left-[22%] sm:left-[21%]
   
   top-0 bottom-5 
   w-[20%] sm:w-[20%] 
@@ -94,7 +112,7 @@ const pricing = () => {
       border-b border-black/40">
 
       <h3 className="text-white lg:font-semibold 
-        text-sm sm:text-sm lg:text-lg leading-tight">
+        text-xs sm:text-sm lg:text-lg leading-tight">
         Cody Commerce<br />Partnership
       </h3>
     </div>
@@ -130,7 +148,7 @@ const pricing = () => {
                 <div className="h-20 sm:h-24 lg:h-28 border-r border-white/10"></div>
                 
                 {/* Cody Commerce - Transparent to show overlay */}
-                <div className="h-20 sm:h-24 lg:h-28 border-r border-white/10"></div>
+                <div className="h-20 sm:h-24 lg:h-28 "></div>
                 
                 {/* 3P Vendor Central */}
                 <div className="h-20 sm:h-24 lg:h-28 flex items-center justify-center border-r border-white/10 ">
@@ -158,12 +176,12 @@ const pricing = () => {
               <div className="border-b border-gray-700/50">
                 {/* Section Header */}
                 <div className="grid grid-cols-5 gap-0">
-                  <div className="py-3 sm:py-6 px-2 sm:px-3 border-r border-gray-700/50 ">
-                    <h4 className="text-white font-bold text-xs sm:text-sm lg:text-lg leading-tight">
+                  <div className="py-3 sm:py-6 px-0 sm:px-3 border-r border-gray-700/50 ">
+                    <h4 className="text-white font-bold   text-xs sm:text-sm lg:text-lg leading-tight">
                       Strategic<br />Guidance
                     </h4>
                   </div>
-                  <div className="border-r border-gray-700/50"></div>
+                  <div className=""></div>
                   <div className="border-r border-gray-700/50"></div>
                   <div className="border-r border-gray-700/50"></div>
                   <div></div>
@@ -171,10 +189,10 @@ const pricing = () => {
 
                 {/* High Level Growth Strategy */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-2.5 border-r border-gray-700/50 flex items-center ">
+                  <div className="py-2 sm:py-3 px-0 sm:px-2.5 border-r border-gray-700/50 flex items-center ">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">High Level Growth Strategy</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -191,10 +209,10 @@ const pricing = () => {
 
                 {/* 1:1 Dedicated Expert */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
-                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">1:1 Dedicated Expert</p>
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
+                    <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">1:1 <br />Dedicated Expert</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -211,10 +229,10 @@ const pricing = () => {
 
                 {/* Strict MAP Compliance */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Strict MAP Compliance</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -234,12 +252,12 @@ const pricing = () => {
               <div className="border-b border-gray-700/50">
                 {/* Section Header */}
                 <div className="grid grid-cols-5 gap-0">
-                  <div className="py-3 sm:py-4 px-2 sm:px-3 border-r border-gray-700/50">
+                  <div className="py-3 sm:py-4 px-0 sm:px-3 border-r border-gray-700/50">
                     <h4 className="text-white font-bold text-xs sm:text-sm lg:text-lg leading-tight">
                       Sales & Brand<br />Control
                     </h4>
                   </div>
-                  <div className="border-r border-gray-700/50"></div>
+                  <div className=""></div>
                   <div className="border-r border-gray-700/50"></div>
                   <div className="border-r border-gray-700/50"></div>
                   <div></div>
@@ -247,10 +265,10 @@ const pricing = () => {
 
                 {/* Complete Catalog Optimization */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Complete Catalog Optimization</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -267,10 +285,10 @@ const pricing = () => {
 
                 {/* High Volume Purchase Order */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">High Volume Purchase Order</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -287,10 +305,10 @@ const pricing = () => {
 
                 {/* Full Data Transparency */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Full Data Transparency</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -310,12 +328,12 @@ const pricing = () => {
               <div className="border-b border-gray-700/50">
                 {/* Section Header */}
                 <div className="grid grid-cols-5 gap-0">
-                  <div className="py-3 sm:py-4 px-2 sm:px-3 border-r border-gray-700/50">
+                  <div className="py-3 sm:py-4 px-0 sm:px-3 border-r border-gray-700/50">
                     <h4 className="text-white font-bold text-xs sm:text-sm lg:text-lg leading-tight">
                       Fulfillment &<br />Logistics
                     </h4>
                   </div>
-                  <div className="border-r border-gray-700/50"></div>
+                  <div className=""></div>
                   <div className="border-r border-gray-700/50"></div>
                   <div className="border-r border-gray-700/50"></div>
                   <div></div>
@@ -323,10 +341,10 @@ const pricing = () => {
 
                 {/* Custom Prep & Labeling */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Custom Prep & Labeling</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -343,10 +361,10 @@ const pricing = () => {
 
                 {/* Accelerated Prime Delivery */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Accelerated Prime Delivery</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -363,10 +381,10 @@ const pricing = () => {
 
                 {/* End to End Returns Management */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">End to End Returns Management</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -386,12 +404,12 @@ const pricing = () => {
               <div>
                 {/* Section Header */}
                 <div className="grid grid-cols-5 gap-0">
-                  <div className="py-3 sm:py-4 px-2 sm:px-3 border-r border-gray-700/50">
+                  <div className="py-3 sm:py-4 px-0 sm:px-3 border-r border-gray-700/50">
                     <h4 className="text-white font-bold text-xs sm:text-sm lg:text-lg leading-tight">
                       Ecosystem<br />Protection
                     </h4>
                   </div>
-                  <div className="border-r border-gray-700/50"></div>
+                  <div className=""></div>
                   <div className="border-r border-gray-700/50"></div>
                   <div className="border-r border-gray-700/50"></div>
                   <div></div>
@@ -399,10 +417,10 @@ const pricing = () => {
 
                 {/* Strict Platform Compliance */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Strict Platform Compliance</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -419,10 +437,10 @@ const pricing = () => {
 
                 {/* Listing Hijacker Protection */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Listing Hijacker Protection</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -439,14 +457,14 @@ const pricing = () => {
 
                 {/* Proactive Account Health */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3 border-r border-gray-700/50 flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Proactive Account Health</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center  justify-center  bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
+                  <div className="py-2 sm:py-3  flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
                     <MdDoNotDisturbOn />
                   </div>
                   <div className="py-2 sm:py-3 flex items-center text-gray-500 lg:text-xl sm:text-lg justify-center border-r border-gray-700/50">
@@ -459,10 +477,10 @@ const pricing = () => {
 
                 {/* Advance PPC & Scaling */}
                 <div className="grid grid-cols-5 gap-0 border-t border-gray-700/50">
-                  <div className="py-2 sm:py-3 px-2 sm:px-3 border-r border-gray-700/50 flex items-center">
+                  <div className="py-2 sm:py-3 px-0 sm:px-3  flex items-center">
                     <p className="text-gray-300 text-[10px] sm:text-xs lg:text-sm">Advance PPC & Scaling</p>
                   </div>
-                  <div className="py-2 sm:py-3 flex items-center justify-center border-r border-gray-700/50 bg-gradient-to-br from-orange-500/10 to-transparent">
+                  <div className="py-2 sm:py-3 flex items-center justify-center bg-gradient-to-br from-orange-500/10 to-transparent">
                     <FaCheck  />
                     <span className="text-orange-400 font-medium text-[10px] sm:text-xs">Yes</span>
                   </div>
@@ -485,7 +503,7 @@ const pricing = () => {
         
     </div>
 <div>
-            <p className='text-white text-center tracking-widest text-sm mt-12 md:mt-50'>
+            <p className='text-white text-center tracking-widest text-xs md:text-sm mt-12 md:mt-50'>
               Partner with us today to transform your eCommerce strategy into <br/> a scalable success story
             </p>
           </div>

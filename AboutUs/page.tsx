@@ -70,7 +70,7 @@ export default function aboutus() {
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-4">
             <div className="px-3 py-1 rounded-full shadow-[inset_0_2px_10px_rgba(255,255,255,0.2)] bg-neutral-900 backdrop-blur-sm border border-white/30">
-              <span className="text-xs font-bold tracking-widest text-[#FF8D28] ">
+              <span className="text-xs font-bold tracking-widest text-nowrap text-[#FF8D28] ">
                 ABOUT FOUNDER
               </span>
             </div>
